@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="co.edu.uniquindio.reservasuq.controladores.PanelClienteControlador">
+    <children>
+        <Label text="Bienvenido, " style="-fx-font-size: 24; -fx-font-weight: bold;" layoutX="20" layoutY="20"/>
+        <Label fx:id="lblNombre" text="Nombre del Cliente" style="-fx-font-size: 18;" layoutX="20" layoutY="60"/>
+        <Label fx:id="lblCedula" text="Cédula: " style="-fx-font-size: 18;" layoutX="20" layoutY="100"/>
+
+        <TableView fx:id="tablaReservas" layoutX="20" layoutY="150" prefWidth="400" prefHeight="300">
+            <columns>
+                <TableColumn text="ID Instalación" fx:id="colIdInstalacion" prefWidth="150"/>
+                <TableColumn text="Fecha" fx:id="colFecha" prefWidth="100"/>
+                <TableColumn text="Hora" fx:id="colHora" prefWidth="100"/>
+            </columns>
+        </TableView>
+
+        <Button fx:id="btnCrearReserva" text="Crear Reserva" layoutX="20" layoutY="470" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" onAction="#crearReserva"/>
+        <Button fx:id="btnCancelarReserva" text="Cancelar Reserva" layoutX="150" layoutY="470" style="-fx-background-color: #F44336; -fx-text-fill: white;" onAction="#cancelarReserva"/>
+    </children>
+</AnchorPane>
+
+
+

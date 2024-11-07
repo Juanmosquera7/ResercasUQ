@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="co.edu.uniquindio.reservasuq.controladores.RegistroControlador">
+    <children>
+        <VBox alignment="CENTER" spacing="10.0" layoutX="50.0" layoutY="30.0">
+            <Label text="Formulario de Registro" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+            <!-- Campo Cédula -->
+            <HBox spacing="10">
+                <Label text="Cédula:" prefWidth="100" />
+                <TextField fx:id="txtCedula" promptText="Ingrese su cédula" />
+            </HBox>
+
+            <!-- Campo Nombre -->
+            <HBox spacing="10">
+                <Label text="Nombre:" prefWidth="100" />
+                <TextField fx:id="txtNombre" promptText="Ingrese su nombre completo" />
+            </HBox>
+
+            <!-- Campo Tipo de Persona -->
+            <HBox spacing="10">
+                <Label text="Tipo de Persona:" prefWidth="100" />
+                <ComboBox fx:id="comboTipoPersona" promptText="Seleccione tipo" />
+            </HBox>
+
+            <!-- Campo Email -->
+            <HBox spacing="10">
+                <Label text="Email:" prefWidth="100" />
+                <TextField fx:id="txtEmail" promptText="Ingrese su email" />
+            </HBox>
+
+            <!-- Campo Contraseña -->
+            <HBox spacing="10">
+                <Label text="Contraseña:" prefWidth="100" />
+                <PasswordField fx:id="txtPassword" promptText="Ingrese su contraseña" />
+            </HBox>
+
+            <!-- Botón de Registro -->
+            <Button text="Registrar" onAction="#registrarPersona" prefWidth="150" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" />
+        </VBox>
+    </children>
+</AnchorPane>
+
+

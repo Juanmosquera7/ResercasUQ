@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="co.edu.uniquindio.reservasuq.controladores.CrearReservaControlador">
+    <children>
+        <Label text="Crear Reserva" style="-fx-font-size: 24px; -fx-font-weight: bold;" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="20"/>
+
+        <VBox spacing="15" alignment="CENTER" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="80" AnchorPane.rightAnchor="20">
+            <ComboBox fx:id="comboInstalaciones" promptText="Seleccione una instalación"/>
+            <ComboBox fx:id="comboHorarios" promptText="Seleccione un horario"/>
+            <Label fx:id="lblEstadoDisponibilidad" style="-fx-font-size: 14px;"/>
+
+            <Button fx:id="btnConfirmarReserva" text="Confirmar Reserva" onAction="#confirmarReserva"/>
+
+        </VBox>
+    </children>
+</AnchorPane>
+
+

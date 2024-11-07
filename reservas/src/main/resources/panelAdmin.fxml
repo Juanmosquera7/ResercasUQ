@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="co.edu.uniquindio.reservasuq.controladores.PanelAdminControlador">
+    <children>
+        <Label text="Panel de Administrador" style="-fx-font-size: 24; -fx-font-weight: bold;" layoutX="20" layoutY="20"/>
+
+        <Button fx:id="btnGestionarReservas" text="Gestionar Reservas" layoutX="20" layoutY="100" prefWidth="150"/>
+        <Button fx:id="btnGestionarInstalaciones" text="Gestionar Instalaciones" layoutX="200" layoutY="100" prefWidth="150"/>
+        <Button fx:id="btnVerReportes" text="Ver Reportes" layoutX="380" layoutY="100" prefWidth="150"/>
+
+        <TableView fx:id="tablaReservas" layoutX="20" layoutY="150" prefWidth="600" prefHeight="400">
+            <columns>
+                <TableColumn text="ID Instalación" fx:id="colIdInstalacion" prefWidth="150"/>
+                <TableColumn text="Cédula Cliente" fx:id="colCedulaCliente" prefWidth="150"/>
+                <TableColumn text="Fecha" fx:id="colFecha" prefWidth="100"/>
+                <TableColumn text="Hora" fx:id="colHora" prefWidth="100"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
